@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="Suite" parallel="false">
+	
+	<listeners>
+<listener class-name="utilities.listenerReport">
+</listener>
+</listeners>
+	<test name ="ChromeTest">
+		
+		<parameter name="browser" value="chrome"/>
+		
+		<classes >
+			<class name="testCases.Tc1_city"/>
+			 <class name="testCases.Tc2_clicksports"/>
+			 <class name="testCases.Tc3_movies"/>
+			 <class name="testCases.Tc4_clickSignin"/>
+		</classes>
+</test>
+
+<test name ="EdgeTest">
+		
+		<parameter name="browser" value="edge"/>
+		
+		<classes >
+			<class name="testCases.Tc1_city"/>
+			 <class name="testCases.Tc2_clicksports"/>
+			 <class name="testCases.Tc3_movies"/>
+			 <class name="testCases.Tc4_clickSignin"/>
+		</classes>
+</test>
+ 
+</suite> <!-- Suite -->
